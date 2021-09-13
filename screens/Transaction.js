@@ -49,13 +49,13 @@ export default class TransactionScreen extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.text}>
-          {hasCameraPermissions ? scannedData : "Request for Camera Permission"}
+          {hasCameraPermissions ? scannedData : "Solicitar permiso de la cámara"}
         </Text>
         <TouchableOpacity
           style={[styles.button, { marginTop: 25 }]}
           onPress={() => this.getCameraPermissions("scanner")}
         >
-          <Text style={styles.buttonText}>Scan QR Code</Text>
+          <Text style={styles.buttonText}>Escanear código QR</Text>
         </TouchableOpacity>
       </View>
     );
